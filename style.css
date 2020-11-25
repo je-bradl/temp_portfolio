@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: url(caution_tape-03.png);
+    background-size: 100% auto;
+	overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.content {
+    /* border: brown 3pt solid; */
+    margin-top: 15%;
+    margin-bottom: auto;
+    display: block;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    height: 23vh;
+    /* border: yellow 3pt solid; */
+}
+
+.title-text{
+    grid-area: title;
+    font-size: 10vh;
+    text-align: center;
+    color: black;
+}
+
+.subtitle-text{
+    grid-area: subtitle;
+    font-family: brother-1816, sans-serif;
+    font-size: 3vh;
+    height: 10vh;
+    padding-top: 4vh;
+    text-align: center;
+    /* border: blue 3pt solid; */
+}
+
+.nav {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 3px solid black; */
+    font-family: brother-1816, sans-serif;
+    width: 99vh;
+    height: 13vh;
+    text-align: center;
+    /* transform: translateY(7vh); */
+}
+
+.nav-links {
+	justify-content: space-between;
+    list-style: none;
+    display: inline-flex;
+    padding-bottom: 8px;
+    transform: translateY(-1vh);
+}
+
+ul {
+    overflow: hidden;
+}
+
+a, .drop-hover {
+	text-decoration: none;
+    font-size: 14pt;
+    color: black;
+}
+
+.nav-link, .drop-hover {
+    padding: 0px 25px;
+    font-size: 4vh;
+}
+
+li a:hover, .dropdown:hover .drop-hover {
+    color: #5f9c5f;
+}
+
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    /* min-width: 160px; */
+    z-index: 1;
+    list-style: none;    
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 3vh;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeIn 600ms ease;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
